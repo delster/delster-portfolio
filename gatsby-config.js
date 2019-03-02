@@ -31,6 +31,7 @@ module.exports = {
       resolve: `gatsby-plugin-styled-components`,
       options: {},
     },
+    `gatsby-plugin-sass`,
     'gatsby-plugin-offline',
   ],
 }
