@@ -18,14 +18,18 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `delster-portfolio`,
+        short_name: `delster`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png`,
       },
+    },
+    {
+      resolve: `gatsby-plugin-styled-components`,
+      options: {},
     },
     'gatsby-plugin-offline',
   ],
