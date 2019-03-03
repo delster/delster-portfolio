@@ -1,4 +1,3 @@
-<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.gatsbyjs.org">
     <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" height="120" />
@@ -13,7 +12,7 @@
 
 <h1 align="center">David Elster's Portfolio Site</h1>
 
-This is the code base for my personal website. I'll try to keep this `README` updated, but it's probably best to just visit the site once it's live.
+This is the code base for my personal website. I'll try to keep this `README` updated, but it's probably best to just visit the site once it's live. While in development, you can visit the site this repo generates [here](https://delster.netlify.com/). The build/deploy status of that URL is [![Netlify Status](https://api.netlify.com/api/v1/badges/af7c64c0-0988-4641-b1d2-4b9d249b86ae/deploy-status)](https://app.netlify.com/sites/delster/deploys) (provided by the geniuses at [Netlify](https://www.netlify.com/)).
 
 ## 🚀 How to Use
 
