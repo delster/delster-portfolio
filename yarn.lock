@@ -777,6 +777,16 @@
     signedsource "^1.0.0"
     yargs "^9.0.0"
 
+"@hot-loader/react-dom@^16.8.3":
+  version "16.8.3"
+  resolved "https://registry.yarnpkg.com/@hot-loader/react-dom/-/react-dom-16.8.3.tgz#eda02b457b2d1dea2d107f4b63e0b9723b88e775"
+  integrity sha512-1qsW26XvHyvl5DswKqOYzG7PefYVaauwl3KM5Eb6MjYsF3TH4CcZ/TTcStscsRrde+2B4oXcWOTzFc5nI0ArLg==
+  dependencies:
+    loose-envify "^1.1.0"
+    object-assign "^4.1.1"
+    prop-types "^15.6.2"
+    scheduler "^0.13.3"
+
 "@mrmlnc/readdir-enhanced@^2.2.1":
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/@mrmlnc/readdir-enhanced/-/readdir-enhanced-2.2.1.tgz#524af240d1a360527b730475ecfa1344aa540dde"
