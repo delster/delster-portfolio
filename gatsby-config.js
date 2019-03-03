@@ -27,10 +27,7 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`,
       },
     },
-    {
-      resolve: `gatsby-plugin-styled-components`,
-      options: {},
-    },
+    `gatsby-plugin-styled-components`,
     `gatsby-plugin-sass`,
     'gatsby-plugin-offline',
   ],
