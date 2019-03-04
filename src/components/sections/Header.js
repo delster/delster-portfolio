@@ -4,9 +4,15 @@ import React from "react"
 
 const Header = ({ siteTitle }) => (
   <header>
-    <h1>
+    <div>
       <Link to="/">{siteTitle}</Link>
-    </h1>
+    </div>
+    <div>
+      <Link to="/about">About</Link>
+      <Link to="/projects">Projects</Link>
+      <Link to="/blog">Blog</Link>
+      <Link to="/contact">Contact</Link>
+    </div>
   </header>
 )
 
