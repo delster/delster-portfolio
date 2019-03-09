@@ -14,6 +14,7 @@ module.exports = {
       }
     },
     `gatsby-transformer-remark`,
+    `gatsby-mdx`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -21,13 +22,14 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `posts`,
-        path: `${__dirname}/src/posts`,
-      },
-    },
+    // Will use this for MDX posts for the blog.
+    // {
+    //   resolve: `gatsby-source-filesystem`,
+    //   options: {
+    //     name: `posts`,
+    //     path: `${__dirname}/src/posts`,
+    //   },
+    // },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
