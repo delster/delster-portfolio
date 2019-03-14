@@ -2,8 +2,8 @@ import React from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 
-import Header from "./sections/Header"
-import Footer from "./sections/Footer"
+import Header from "./layout/header"
+import Footer from "./layout/footer"
 import "normalize.css"
 import "./layout.sass"
 

@@ -1,10 +1,10 @@
 import React from "react"
 import Layout from "../components/layout"
-import SEO from "../components/seo"
-import Hero from "../components/sections/Hero"
-import InvertedCTA from "../components/sections/InvertedCTA"
-import Skills from "../components/sections/Skills.js"
-import Projects from "../components/sections/Projects"
+import SEO from "../utils/seo"
+import Hero from "../components/sections/hero"
+import InvertedCTA from "../components/sections/invertedcta"
+import Skills from "../components/sections/skills"
+import Projects from "../components/sections/projects"
 
 const IndexPage = () => (
   <Layout>

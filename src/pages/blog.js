@@ -2,8 +2,8 @@ import React from "react"
 import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
-import SEO from "../components/seo"
-import Hero from "../components/sections/Hero"
+import SEO from "../utils/seo"
+import Hero from "../components/sections/hero"
 import PostSnippet from "../components/posts/snippet"
 
 export default ({ data }) => {

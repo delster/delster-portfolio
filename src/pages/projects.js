@@ -1,8 +1,8 @@
 import React from "react"
 
 import Layout from "../components/layout"
-import SEO from "../components/seo"
-import Hero from "../components/sections/Hero"
+import SEO from "../utils/seo"
+import Hero from "../components/sections/hero"
 
 const ProjectsPage = () => (
   <Layout>
