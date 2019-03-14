@@ -6,8 +6,10 @@ import Hero from "../components/sections/hero"
 
 const ContactPage = () => (
   <Layout>
-    <SEO title="Contact | David Elster" keywords={[`delster`, `developer`, `portfolio`]} />
-    <Hero title="This is the Contact page." />
+    <Container>
+      <SEO title="Contact | David Elster" keywords={[`delster`, `developer`, `portfolio`]} />
+      <Hero title="This is the Contact page." />
+    </Container>
   </Layout>
 )
 
