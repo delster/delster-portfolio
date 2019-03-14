@@ -1,14 +1,46 @@
 import React from "react"
+import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Hero from "../components/sections/Hero"
+import PostSnippet from "../components/posts/snippet"
 
-const BlogPage = () => (
-  <Layout>
-    <SEO title="Blog | David Elster" keywords={[`delster`, `developer`, `portfolio`]} />
-    <Hero title="This is the Blog page." />
-  </Layout>
-)
+export default ({ data }) => {
+  return (
+    <Layout>
+      <SEO title="Blog | David Elster" keywords={[`delster`, `developer`, `portfolio`]} />
+      <Hero title="Blog Posts" />
+      <div className="blog-roll">
+        {data.allMarkdownRemark.edges.map(({ node }) => (
+          <PostSnippet
+            key={node.id}
+            path={node.frontmatter.path}
+            title={node.frontmatter.title}
+            date={node.frontmatter.date}
+            excerpt={node.excerpt}
+          />
+        ))}
+      </div>
+    </Layout>
+  )
+}
 
-export default BlogPage
+export const query = graphql`
+  query {
+    allMarkdownRemark {
+      totalCount
+      edges {
+        node {
+          id
+          frontmatter {
+            path
+            title
+            date(formatString: "DD MMMM, YYYY")
+          }
+          excerpt
+        }
+      }
+    }
+  }
+`

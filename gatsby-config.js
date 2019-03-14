@@ -5,7 +5,31 @@ module.exports = {
     author: `@delster`,
   },
   plugins: [
+    // SEO
     `gatsby-plugin-react-helmet`,
+    // File System as a GraphQL Source
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images/`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `posts`,
+        path: `${__dirname}/src/posts/`,
+      },
+    },
+    // Blogging / Markdown
+    `gatsby-plugin-netlify-cms`,
+    `gatsby-transformer-remark`,
+    // Images
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    // Styling
+    `gatsby-plugin-sass`,
     {
       resolve: `gatsby-plugin-typography`,
       options: {
@@ -13,16 +37,8 @@ module.exports = {
         omitGoogleFont: true,
       }
     },
-    `gatsby-transformer-remark`,
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
-      },
-    },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+    `gatsby-plugin-styled-components`,
+    // PWA Manifest
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -35,8 +51,7 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`,
       },
     },
-    `gatsby-plugin-styled-components`,
-    `gatsby-plugin-sass`,
+    // PWA Offline Access
     'gatsby-plugin-offline',
   ],
 }
