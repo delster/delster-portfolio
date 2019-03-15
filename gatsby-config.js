@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `David Elster | Frontend Developer, JAMstack Advocate`,
-    description: `Personal portfolio site for David Elster, frontend web developer.`,
-    author: `@delster`,
+    title: `David Elster`,
+    description: `David Elster, Frontend Developer & JAMstack Advocate`,
+    author: `https://github.com/delster`,
   },
   plugins: [
     // SEO
@@ -22,7 +22,7 @@ module.exports = {
         path: `${__dirname}/src/posts/`,
       },
     },
-    // Blogging / Markdown
+    // Blogging / Markdownsd
     `gatsby-plugin-netlify-cms`,
     `gatsby-transformer-remark`,
     // Images
@@ -35,7 +35,7 @@ module.exports = {
       options: {
         pathToConfigModule: `src/utils/typography`,
         omitGoogleFont: true,
-      }
+      },
     },
     `gatsby-plugin-styled-components`,
     // PWA Manifest
@@ -48,10 +48,10 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-//        icon: `src/images/gatsby-icon.png`,
+        //        icon: `src/images/gatsby-icon.png`,
       },
     },
     // PWA Offline Access
-    'gatsby-plugin-offline',
+    "gatsby-plugin-offline",
   ],
 }

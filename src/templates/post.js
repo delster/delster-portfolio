@@ -2,6 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
+import Container from "../components/grid/container"
 import SEO from "../utils/seo"
 import Hero from "../components/sections/hero"
 
@@ -17,7 +18,7 @@ return (
       title="David Elster"
       subtitle="Front-end & JavaScript Developer | JAMstack Advocate"
     />
-    <div className="blog-post-container">
+    <Container>
       <div className="blog-post">
         <h1>{frontmatter.title}</h1>
         <h2>{frontmatter.date}</h2>
@@ -26,7 +27,7 @@ return (
           dangerouslySetInnerHTML={{ __html: html }}
         />
       </div>
-    </div>
+    </Container>
   </Layout>
   )
 }
