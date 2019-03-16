@@ -2,10 +2,10 @@ import React from "react"
 import Layout from "../components/layout"
 import Container from "../components/grid/container"
 import SEO from "../utils/seo"
-import Hero from "../components/sections/hero"
-import InvertedCTA from "../components/sections/invertedcta"
-import Skills from "../components/sections/skills"
-import Projects from "../components/sections/projects"
+import Hero from "../components/hero"
+import InvertedCTA from "../components/invertedcta"
+import Skills from "../components/skills"
+import Showcase from "../components/showcase"
 
 const IndexPage = () => (
   <Layout>
@@ -20,7 +20,7 @@ const IndexPage = () => (
         <p>Some backstory will go here!</p>
       </InvertedCTA>
       <Skills />
-      <Projects />
+      <Showcase />
     </Container>
   </Layout>
 )

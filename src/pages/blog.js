@@ -4,7 +4,7 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import Container from "../components/grid/container"
 import SEO from "../utils/seo"
-import Hero from "../components/sections/hero"
+import Hero from "../components/hero"
 import PostSnippet from "../components/posts/snippet"
 
 export default ({ data }) => {

@@ -2,7 +2,7 @@ import React from "react"
 
 import Layout from "../components/layout"
 import SEO from "../utils/seo"
-import Hero from "../components/sections/hero"
+import Hero from "../components/hero"
 
 const ContactPage = () => (
   <Layout>

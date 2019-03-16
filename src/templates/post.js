@@ -4,7 +4,7 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import Container from "../components/grid/container"
 import SEO from "../utils/seo"
-import Hero from "../components/sections/hero"
+import Hero from "../components/hero"
 
 // this prop will be injected by the GraphQL query below.
 export default function Template({ data }) {

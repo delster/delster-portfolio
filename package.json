@@ -1,6 +1,5 @@
 {
   "name": "delster-portfolio",
-  "private": true,
   "description": "The personal portfolio site for David Elster, Frontend Web Developer.",
   "version": "0.1.0",
   "author": "David Elster <davidandtheweb@gmail.com>",
