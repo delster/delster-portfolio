@@ -8,13 +8,14 @@ module.exports = {
     // SEO
     `gatsby-plugin-react-helmet`,
     // File System as a GraphQL Source
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `images`,
-        path: `${__dirname}/src/images/`,
-      },
-    },
+    // Uncomment when at least 1 image is in /images. If empty, it'll error in CI/CD.
+    // {
+    //   resolve: `gatsby-source-filesystem`,
+    //   options: {
+    //     name: `images`,
+    //     path: `${__dirname}/src/images/`,
+    //   },
+    // },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
