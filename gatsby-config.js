@@ -5,9 +5,9 @@ module.exports = {
     author: `https://github.com/delster`,
   },
   plugins: [
-    // SEO
+    // SEO with React Helmet
     `gatsby-plugin-react-helmet`,
-    // File System as a GraphQL Source
+    // GraphQL Source for Images
     // Uncomment when at least 1 image is in /images. If empty, it'll error in CI/CD.
     // {
     //   resolve: `gatsby-source-filesystem`,
@@ -16,6 +16,7 @@ module.exports = {
     //     path: `${__dirname}/src/images/`,
     //   },
     // },
+    // GraphQL Source for Posts
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -23,14 +24,16 @@ module.exports = {
         path: `${__dirname}/src/posts/`,
       },
     },
-    // Blogging / Markdownsd
+    // React SPA CMS
     `gatsby-plugin-netlify-cms`,
+    // Markdown Parser
     `gatsby-transformer-remark`,
-    // Images
+    // Sharp Library for Images
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    // Styling
+    // Sass Compilation
     `gatsby-plugin-sass`,
+    // Typography.js
     {
       resolve: `gatsby-plugin-typography`,
       options: {
@@ -38,6 +41,7 @@ module.exports = {
         omitGoogleFont: true,
       },
     },
+    // Styled Components
     `gatsby-plugin-styled-components`,
     // PWA Manifest
     {
@@ -49,10 +53,12 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        //        icon: `src/images/gatsby-icon.png`,
+ //     icon: `src/images/gatsby-icon.png`,
       },
     },
     // PWA Offline Access
-    "gatsby-plugin-offline",
+    `gatsby-plugin-offline`,
+    // Enable HTTP/2 Server Push through Netlify
+    `gatsby-plugin-netlify`,
   ],
 }
