@@ -1,0 +1,4 @@
+## markdownlint config
+## https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint
+"MD002": false # Don't require h1's as they'll be provided by the Post Title.
+"MD013": false # Ignore max line length as the site will provide word wrap.
