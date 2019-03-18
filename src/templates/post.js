@@ -4,7 +4,6 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import Container from "../components/grid/container"
 import SEO from "../utils/seo"
-import Hero from "../components/hero"
 
 import "./post.sass"
 
@@ -15,8 +14,7 @@ export default function Template({ data }) {
 
   return (
     <Layout>
-      <SEO title="Home | David Elster" keywords={[`delster`, `developer`, `portfolio`]} />
-      <Hero />
+      <SEO title="Blogroll" keywords={[`delster`, `developer`, `portfolio`]} />
       <Container>
         <div className="blog-post">
           <h1 className="blog-post-title">{frontmatter.title}</h1>

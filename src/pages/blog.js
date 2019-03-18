@@ -15,13 +15,13 @@ export default ({ data }) => {
       <Container>
         <div className="blog-roll">
           {data.allMarkdownRemark.edges.map(({ node }) => (
-            <PostSnippet
-              key={node.id}
-              path={node.frontmatter.path}
-              title={node.frontmatter.title}
-              date={node.frontmatter.date}
-              excerpt={node.excerpt}
-            />
+              <PostSnippet
+                key={node.id}
+                path={node.frontmatter.path}
+                title={node.frontmatter.title}
+                date={node.frontmatter.date}
+                excerpt={node.excerpt}
+              />
           ))}
         </div>
       </Container>
@@ -39,7 +39,7 @@ export const query = graphql`
           frontmatter {
             path
             title
-            date(formatString: "DD MMMM, YYYY")
+            date(formatString: "MMMM DD, YYYY")
           }
           excerpt
         }

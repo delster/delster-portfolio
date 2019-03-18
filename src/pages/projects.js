@@ -7,7 +7,7 @@ import Hero from "../components/hero"
 const ProjectsPage = () => (
   <Layout>
     <SEO title="Projects" keywords={[`delster`, `developer`, `portfolio`]} />
-    <Hero title="This is the Projects page." />
+    <Hero title="Recent Projects" />
   </Layout>
 )
 
