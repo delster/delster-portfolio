@@ -4,10 +4,12 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import Container from "../components/grid/container"
 import SEO from "../utils/seo"
+import Hero from "../components/hero"
 
 const AboutPage = () => (
   <Layout>
     <SEO title="About" keywords={[`delster`, `developer`, `portfolio`]} />
+    <Hero title="More About Me" />
     <Container>
       <h1>Hi from the About page</h1>
       <p>Welcome to page 2</p>

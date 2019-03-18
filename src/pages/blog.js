@@ -11,7 +11,7 @@ export default ({ data }) => {
   return (
     <Layout>
       <SEO title="Blog" keywords={[`delster`, `developer`, `portfolio`]} />
-      <Hero title="Blog Posts" />
+      <Hero title="Recent Blog Posts" />
       <Container>
         <div className="blog-roll">
           {data.allMarkdownRemark.edges.map(({ node }) => (

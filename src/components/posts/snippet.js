@@ -1,6 +1,8 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
+import './snippet.sass'
+
 const PostSnippet = props => {
   const { path, title, date, excerpt } = props
   return (
