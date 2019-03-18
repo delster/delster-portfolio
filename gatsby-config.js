@@ -8,14 +8,13 @@ module.exports = {
     // SEO with React Helmet
     `gatsby-plugin-react-helmet`,
     // GraphQL Source for Images
-    // Uncomment when at least 1 image is in /images. If empty, it'll error in CI/CD.
-    // {
-    //   resolve: `gatsby-source-filesystem`,
-    //   options: {
-    //     name: `images`,
-    //     path: `${__dirname}/src/images/`,
-    //   },
-    // },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images/`,
+      },
+    },
     // GraphQL Source for Posts
     {
       resolve: `gatsby-source-filesystem`,
@@ -53,7 +52,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
- //     icon: `src/images/gatsby-icon.png`,
+        icon: `src/images/favicon.png`,
       },
     },
     // PWA Offline Access
