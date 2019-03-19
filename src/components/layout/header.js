@@ -1,15 +1,14 @@
 import React from "react"
-import PropTypes from "prop-types"
 import { Link } from "gatsby"
 
 import Container from '../grid/container'
 import './header.sass'
 
-const Header = ({ siteTitle }) => (
+const Header = () => (
   <header className="header">
     <Container>
       <div className="header-left">
-        <Link to="/">{siteTitle.substring(0,12)}</Link>
+        <Link to="/">David Elster</Link>
       </div>
       <div className="header-right">
         <Link to="/about">About</Link>
@@ -20,13 +19,5 @@ const Header = ({ siteTitle }) => (
     </Container>
   </header>
 )
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
-}
 
 export default Header

@@ -1,19 +1,18 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import Container from "../components/grid/container"
 import SEO from "../utils/seo"
-import Hero from "../components/hero"
 
 const AboutPage = () => (
-  <Layout>
+  <Layout
+    title="More About Me"
+    gradient="linear-gradient(210deg, #52ACFF 50%, #FFE32C 100%)"
+  >
     <SEO title="About" keywords={[`delster`, `developer`, `portfolio`]} />
-    <Hero title="More About Me" />
     <Container>
-      <h1>Hi from the About page</h1>
-      <p>Welcome to page 2</p>
-      <Link to="/">Go back to the homepage</Link>
+      <h2>Hello, this is the about page.</h2>
+      <p>Welcome to the page that will eventually house a bio and history and personal stuff.</p>
     </Container>
   </Layout>
 )

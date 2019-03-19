@@ -1,0 +1,35 @@
+$content-gutter: 2rem
+
+.contact-form
+  & :focus
+    outline: none
+  display: flex
+  flex-flow: row wrap
+  align-items: center
+  justify-content: center
+  .field
+    padding: .5rem
+    flex: 1 1 100%
+    &.fifty
+      flex-basis: 50%
+      & ~ .fifty
+        text-align: right
+  input,select,textarea,button
+    margin-bottom: $content-gutter/2
+    width: 100%
+    background-color: #fff
+    margin-bottom: $content-gutter
+    padding: $content-gutter
+    border: none
+    border-radius: $content-gutter
+    box-shadow: 0 4px 16px 0 rgba(0,0,0,.04)
+  textarea
+    padding-bottom: $content-gutter*2
+  button
+    color: white
+    font-weight: 600
+    text-transform: uppercase
+    transition: .5s background ease-in-out
+    background: linear-gradient(200deg, rgb(33, 212, 253) 0%, rgb(183, 33, 255) 100%)
+    &:focus
+      background: linear-gradient(20deg, rgb(33, 212, 253) 0%, rgb(183, 33, 255) 100%)

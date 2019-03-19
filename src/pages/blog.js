@@ -4,14 +4,15 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import Container from "../components/grid/container"
 import SEO from "../utils/seo"
-import Hero from "../components/hero"
 import PostSnippet from "../components/posts/snippet"
 
 export default ({ data }) => {
   return (
-    <Layout>
+    <Layout
+      title="Recent Blog Posts"
+      gradient="linear-gradient(90deg, #FAD961 0%, #F76B1C 100%)"
+    >
       <SEO title="Blog" keywords={[`delster`, `developer`, `portfolio`]} />
-      <Hero title="Recent Blog Posts" />
       <Container>
         <div className="blog-roll">
           {data.allMarkdownRemark.edges.map(({ node }) => (

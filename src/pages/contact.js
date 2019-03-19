@@ -2,12 +2,15 @@ import React from "react"
 
 import Layout from "../components/layout"
 import SEO from "../utils/seo"
-import Hero from "../components/hero"
+import ContactForm from "../components/contactform"
 
 const ContactPage = () => (
-  <Layout>
+  <Layout
+    title="Reach Out!"
+    gradient="linear-gradient(19deg, #21D4FD 0%, #B721FF 100%)"
+  >
     <SEO title="Contact" keywords={[`delster`, `developer`, `portfolio`]} />
-    <Hero title="Reach out!" />
+    <ContactForm />
   </Layout>
 )
 
