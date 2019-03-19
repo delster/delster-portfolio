@@ -5,10 +5,7 @@ import Container from "../components/grid/container"
 import SEO from "../utils/seo"
 
 const AboutPage = () => (
-  <Layout
-    title="More About Me"
-    gradient="linear-gradient(210deg, #52ACFF 50%, #FFE32C 100%)"
-  >
+  <Layout title="More About Me">
     <SEO title="About" keywords={[`delster`, `developer`, `portfolio`]} />
     <Container>
       <h2>Hello, this is the about page.</h2>

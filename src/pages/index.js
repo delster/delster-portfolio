@@ -7,7 +7,6 @@ const IndexPage = () => (
   <Layout
     title="David Elster"
     subtitle="Frontend Developer & JAMstack Advocate"
-    gradient="linear-gradient(135deg, #155589 0%, #155589 20%, #5df4dd 100%)"
   >
     <SEO title="Home" keywords={[`delster`, `developer`, `portfolio`]} />
     <Container>

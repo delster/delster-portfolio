@@ -6,7 +6,7 @@ import './hero.sass'
 
 const Hero = props => {
   return (
-    <section className="section hero" style={{background:props.gradient}}>
+    <section className="section hero">
       <Header />
       {(props.title||props.subtitle)&&
         <Container>

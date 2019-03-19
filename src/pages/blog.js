@@ -8,10 +8,7 @@ import PostSnippet from "../components/posts/snippet"
 
 export default ({ data }) => {
   return (
-    <Layout
-      title="Recent Blog Posts"
-      gradient="linear-gradient(90deg, #FAD961 0%, #F76B1C 100%)"
-    >
+    <Layout title="Recent Blog Posts">
       <SEO title="Blog" keywords={[`delster`, `developer`, `portfolio`]} />
       <Container>
         <div className="blog-roll">

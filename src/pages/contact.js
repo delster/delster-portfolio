@@ -5,10 +5,7 @@ import SEO from "../utils/seo"
 import ContactForm from "../components/contactform"
 
 const ContactPage = () => (
-  <Layout
-    title="Reach Out!"
-    gradient="linear-gradient(19deg, #21D4FD 0%, #B721FF 100%)"
-  >
+  <Layout title="Reach Out!">
     <SEO title="Contact" keywords={[`delster`, `developer`, `portfolio`]} />
     <ContactForm />
   </Layout>
