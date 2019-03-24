@@ -1,12 +1,21 @@
-import React from 'react'
-import Container from './grid/container'
-import './contactform.sass'
+import React from "react"
+import Container from "./grid/container"
+import "./contactform.sass"
 
 const ContactForm = () => {
   return (
     <Container>
-      <h2 style={{marginLeft: `2rem`}}>I'm excited to learn about your project, tell me about it!</h2>
-      <form className="contact-form" name="contact" method="POST" data-netlify="true">
+      <h2 style={{ marginLeft: `2rem` }}>
+        I'm excited to learn about your project, tell me about it!
+      </h2>
+      <form
+        className="contact-form"
+        name="contact"
+        method="POST"
+        netlify
+        data-netlify="true"
+      >
+        <input type="hidden" name="form-name" value="contact" />
         <div className="field text-field fifty">
           <input type="text" name="name" placeholder="Your Name" />
         </div>
@@ -15,7 +24,9 @@ const ContactForm = () => {
         </div>
         <div className="field select-field fifty">
           <select name="type">
-            <option value="" defaultValue>My project is a..</option>
+            <option value="" defaultValue>
+              My project is a..
+            </option>
             <option value="New Website">New Website</option>
             <option value="New Web App">New Web App</option>
             <option value="WP to Static">WP to Static</option>
@@ -24,14 +35,19 @@ const ContactForm = () => {
         </div>
         <div className="field select-field fifty">
           <select name="budget">
-            <option value="" defaultValue>My budget is...</option>
+            <option value="" defaultValue>
+              My budget is...
+            </option>
             <option value="$4000-8000">$4000-$8000</option>
             <option value="$8000-$20000">$8000-$20000</option>
             <option value="$20000+">$20000+</option>
           </select>
         </div>
         <div className="field textarea-field">
-          <textarea name="message" placeholder="I am looking for someone to..."></textarea>
+          <textarea
+            name="message"
+            placeholder="I am looking for someone to..."
+          />
         </div>
         <div className="field submit-field">
           <button type="submit">I'm Ready</button>
