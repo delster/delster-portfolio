@@ -23,8 +23,6 @@ module.exports = {
         path: `${__dirname}/src/posts/`,
       },
     },
-    // React SPA CMS
-    `gatsby-plugin-netlify-cms`,
     // Markdown Parser
     `gatsby-transformer-remark`,
     // Sharp Library for Images
