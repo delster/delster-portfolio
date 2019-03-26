@@ -13,13 +13,13 @@ export default ({ data }) => {
       <Container>
         <div className="blog-roll">
           {data.allMarkdownRemark.edges.map(({ node }) => (
-              <PostSnippet
-                key={node.id}
-                path={node.frontmatter.path}
-                title={node.frontmatter.title}
-                date={node.frontmatter.date}
-                excerpt={node.excerpt}
-              />
+            <PostSnippet
+              key={node.id}
+              path={node.frontmatter.path}
+              title={node.frontmatter.title}
+              date={node.frontmatter.date}
+              excerpt={node.excerpt}
+            />
           ))}
         </div>
       </Container>
@@ -29,8 +29,7 @@ export default ({ data }) => {
 
 export const query = graphql`
   query {
-    allMarkdownRemark {
-      totalCount
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC } ) {
       edges {
         node {
           id
