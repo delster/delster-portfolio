@@ -8,8 +8,8 @@ const AboutPage = () => (
   <Layout title="More About Me">
     <SEO title="About" keywords={[`delster`, `developer`, `portfolio`]} />
     <Container>
-      <h2>Hello, this is the about page.</h2>
-      <p>Welcome to the page that will eventually house a bio and history and personal stuff.</p>
+      <h2>I am a Front-end Web Developer in the Greater Philadelphia Area.</h2>
+      <p>You can check out my <a href="https://github.com/delster/" target="_blank" rel="noopener noreferrer">GitHub</a> and <a href="https://www.linkedin.com/in/delster/" target="_blank" rel="noopener noreferrer">LinkedIn</a>.</p>
     </Container>
   </Layout>
 )

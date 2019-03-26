@@ -18,7 +18,7 @@ const typography = new Typography({
   headerFontFamily: ['Merriweather'],
   headerWeight: 900,
   bodyFontFamily: ['Poppins'],
-  bodyGray: 14,
+  bodyGray: 19,
   bodyWeight: 400,
   boldWeight: 600,
   includeNormalize: false
