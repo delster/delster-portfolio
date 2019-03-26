@@ -3,22 +3,18 @@ import Typography from "typography"
 const typography = new Typography({
   title: "David Elster",
   baseFontSize: "20px",
-  baseLineHeight: 1.6,
+  baseLineHeight: 1.7,
   scaleRatio: 2,
   googleFonts: [
     {
-      name: 'Merriweather',
-      styles: ['900'],
-    },
-    {
       name: 'Poppins',
-      styles: ['400', '600'],
+      styles: ['400', '600', '700'],
     },
   ],
-  headerFontFamily: ['Merriweather'],
-  headerWeight: 900,
+  headerFontFamily: ['Poppins'],
+  headerWeight: 700,
   bodyFontFamily: ['Poppins'],
-  bodyGray: 19,
+  bodyGray: 22,
   bodyWeight: 400,
   boldWeight: 600,
   includeNormalize: false

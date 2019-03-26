@@ -1,10 +1,6 @@
 $content-gutter: 2rem
 
-.blog-post
-  margin-top: 0
-.blog-roll .blog-post
-  margin-top: 2*$content-gutter
-
+/* Global Post Sass */
 .blog-post-title,
 .blog-post-date
   margin-bottom: 0
@@ -14,12 +10,19 @@ $content-gutter: 2rem
   font-size: .875rem
   padding-bottom: 1rem
   opacity: .6
-.blog-post-content
-  background-color: #fff
-  margin-bottom: $content-gutter
-  padding: 2*$content-gutter $content-gutter
-  border-radius: $content-gutter
-  box-shadow: 0 4px 16px 0 rgba(0,0,0,.04)
-.blog-post-content .wide
-  margin-left: -$content-gutter
-  margin-right: -$content-gutter
+
+/* Blog "Single" Specific Sass */
+.blog-post
+  margin-top: -4.5rem
+  .blog-post-title,
+  .blog-post-date
+    padding-left: 2rem
+  .blog-post-content
+    background-color: #fff
+    margin-bottom: $content-gutter
+    padding: $content-gutter
+    border-radius: $content-gutter
+    box-shadow: 0 4px 16px 0 rgba(0,0,0,.04)
+    .wide
+      margin-left: -$content-gutter
+      margin-right: -$content-gutter

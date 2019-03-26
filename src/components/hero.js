@@ -1,5 +1,4 @@
 import React from 'react'
-import Header from './header'
 import Container from './grid/container'
 
 import './hero.sass'
@@ -7,7 +6,6 @@ import './hero.sass'
 const Hero = props => {
   return (
     <section className="section hero">
-      <Header />
       {(props.title||props.subtitle)&&
         <Container>
           {props.title &&

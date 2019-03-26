@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from 'gatsby'
+import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../utils/seo"
 import Container from "../components/grid/container"
@@ -18,24 +18,39 @@ const IndexPage = () => (
     </Container>
     <section id="about">
       <Container>
-        <h2>About Me</h2>
-        {/* TODO: Just. Write. This. Copy. Already. Summary or Timeline style, though? */}
-        <div className="bio"></div>
+        <h3>JAMstack Advocacy</h3>
+        <p />
+        <h3>Front-end Web Developer</h3>
+        <p />
+        <h3>All-around Nerd</h3>
+        <p />
+        {/* Potential Blog CTA Here? */}
       </Container>
     </section>
     <section id="projects">
       <Container>
-        <h2>Some Recent Projects</h2>
+        <h2>Showcase</h2>
+        {/* TODO: ProjectGrid */}
       </Container>
     </section>
     <section id="blog">
       <Container>
-        <h2>My Web Development Blog</h2>
+        <h2>I also write about stuff!</h2>
+        <p>
+          I blog on this site and expect to cover news, write tutorials, and
+          just be a resource for others in the front-end space. Click{" "}
+          <Link to="/blog">here</Link> to see what I'm up to.
+        </p>
       </Container>
     </section>
     <section id="contact">
       <Container>
         <h2>Contact Me</h2>
+        <p>
+          The quickest way to get a response is to reach out by email:{" "}
+          <a href="mailto:davidandtheweb@gmail.com">davidandtheweb@gmail.com</a>
+          .
+        </p>
       </Container>
     </section>
   </Layout>

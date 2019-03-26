@@ -5,19 +5,16 @@ import "./contactform.sass"
 const ContactForm = () => {
   return (
     <Container>
-      <h2 style={{ marginLeft: `2rem` }}>
-        I'm excited to learn about your project, tell me about it!
-      </h2>
       <form
         className="contact-form"
         name="contact"
         action="/thanks"
         method="post"
         data-netlify="true"
-        netlify-honeypot="important-field"
+        netlify-honeypot="bot-field"
       >
         <input type="hidden" name="form-name" value="contact" />
-        <input hidden name="important-field" />
+        <input hidden name="bot-field" />
         <div className="field text-field fifty">
           <input type="text" name="name" placeholder="Your Name" />
         </div>

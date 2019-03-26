@@ -1,7 +1,14 @@
-.header .container
-  display: flex
-  flex-flow: row nowrap
-  align-items: center
-  justify-content: space-between
-  .header-right a
+.header
+  *
+    color: white
+  .container
+    display: flex
+    flex-flow: row nowrap
+    align-items: center
+    justify-content: space-between
+    padding: 1rem 0
+  .header-home-link
+    &::after
+      display: none
+  .nav-link
     margin: .5em 1em

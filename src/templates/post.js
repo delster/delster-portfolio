@@ -13,12 +13,13 @@ export default function Template({ data }) {
   const { frontmatter, html } = markdownRemark
 
   return (
-    <Layout>
-      <SEO title="Blogroll" keywords={[`delster`, `developer`, `portfolio`]} />
+    <Layout
+      title={frontmatter.title}
+      subtitle={frontmatter.date}
+    >
+      <SEO title={frontmatter.title} keywords={[`delster`, `developer`, `portfolio`]} />
       <Container>
         <div className="blog-post">
-          <h1 className="blog-post-title">{frontmatter.title}</h1>
-          <p className="blog-post-date">{frontmatter.date}</p>
           <div
             className="blog-post-content"
             dangerouslySetInnerHTML={{ __html: html }}
