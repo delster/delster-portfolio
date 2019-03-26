@@ -11,11 +11,13 @@ const ContactForm = () => {
       <form
         className="contact-form"
         name="contact"
-        method="POST"
-        netlify
+        action="/thanks"
+        method="post"
         data-netlify="true"
+        netlify-honeypot="important-field"
       >
         <input type="hidden" name="form-name" value="contact" />
+        <input hidden name="important-field" />
         <div className="field text-field fifty">
           <input type="text" name="name" placeholder="Your Name" />
         </div>

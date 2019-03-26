@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import Container from '../grid/container'
+import Container from './grid/container'
 import './header.sass'
 
 const Header = () => (

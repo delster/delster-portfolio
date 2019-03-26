@@ -2,7 +2,6 @@ import React from "react"
 import PropTypes from "prop-types"
 
 import Hero from "./hero"
-import Footer from "./layout/footer"
 import "normalize.css"
 import "./layout.sass"
 
@@ -16,7 +15,6 @@ const Layout = props => {
         layout={props.layout || "header"}
       />
       <main>{children}</main>
-      <Footer />
     </div>
   )
 }
