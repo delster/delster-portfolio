@@ -22,13 +22,12 @@ const IndexPage = () => (
         <p />
         <h3>Front-end Web Developer</h3>
         <p>
-          HTML5, Pug (Jade), Haml, JSX, MDX,
-          CSS3, Sass, CSS Modules, styled-components,
-          JavaScript (ES6 / ESNext), jQuery, React,
-          Bootstrap, MaterializeCSS, other frameworks,
-          Gulp, Grunt, Webpack, npm, Yarn, Terminal, CLI, Git, GitHub, Heroku, most modern tools.
-
-          Currently learning Serverless and Cloud Native architecture and related tools; GatsbyJS, GraphQL, Apollo, AWS Lambda, and more.
+          HTML5, Pug (Jade), Haml, JSX, MDX, CSS3, Sass, CSS Modules,
+          styled-components, JavaScript (ES6 / ESNext), jQuery, React,
+          Bootstrap, MaterializeCSS, other frameworks, Gulp, Grunt, Webpack,
+          npm, Yarn, Terminal, CLI, Git, GitHub, Heroku, most modern tools.
+          Currently learning Serverless and Cloud Native architecture and
+          related tools; GatsbyJS, GraphQL, Apollo, AWS Lambda, and more.
         </p>
         <h3>All-around Nerd</h3>
         <p />
