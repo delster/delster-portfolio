@@ -9,7 +9,30 @@ const AboutPage = () => (
     <SEO title="About" keywords={[`delster`, `developer`, `portfolio`]} />
     <Container>
       <h2>Front-end Web Developer in the Greater Philadelphia Area</h2>
-      <p>You can check out my <a href="https://github.com/delster/" target="_blank" rel="noopener noreferrer">GitHub</a> and <a href="https://www.linkedin.com/in/delster/" target="_blank" rel="noopener noreferrer">LinkedIn</a>, or <a href="/resume_davidelster.docx" target="_blank" rel="noopener noreferrer">download a copy of my resume</a>.</p>
+      <p>
+        You can check out my{" "}
+        <a
+          href="https://github.com/delster/"
+          target="_blank"
+          rel="noopener noreferrer">
+          GitHub
+        </a>{" "}
+        and{" "}
+        <a
+          href="https://www.linkedin.com/in/delster/"
+          target="_blank"
+          rel="noopener noreferrer">
+          LinkedIn
+        </a>
+        , or{" "}
+        <a
+          href="/resume_davidelster.docx"
+          target="_blank"
+          rel="noopener noreferrer">
+          download a copy of my resume
+        </a>
+        .
+      </p>
     </Container>
   </Layout>
 )

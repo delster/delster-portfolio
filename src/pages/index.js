@@ -8,8 +8,7 @@ import CTADivider from "../components/ctadivider"
 const IndexPage = () => (
   <Layout
     title="David Elster"
-    subtitle="Frontend Developer & JAMstack Advocate"
-  >
+    subtitle="Frontend Developer & JAMstack Advocate">
     <SEO title="Home" keywords={[`delster`, `developer`, `portfolio`]} />
     <Container>
       <CTADivider bg="#ff9800">
@@ -62,7 +61,8 @@ const IndexPage = () => (
           finally seeing a lot of that exploratory development aggregate into a
           standardized pool of tools. It's very clear we're pointing to a la
           carte development, and small ecoystems are appearing all over to offer
-          options. I'll discuss this more in <Link to="/blog">my blog</Link>, too.
+          options. I'll discuss this more in <Link to="/blog">my blog</Link>,
+          too.
         </p>
         <h3>All-around Nerd</h3>
         <p>

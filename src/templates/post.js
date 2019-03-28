@@ -13,11 +13,11 @@ export default function Template({ data }) {
   const { frontmatter, html } = markdownRemark
 
   return (
-    <Layout
-      title={frontmatter.title}
-      subtitle={frontmatter.date}
-    >
-      <SEO title={frontmatter.title} keywords={[`delster`, `developer`, `portfolio`]} />
+    <Layout title={frontmatter.title} subtitle={frontmatter.date}>
+      <SEO
+        title={frontmatter.title}
+        keywords={[`delster`, `developer`, `portfolio`]}
+      />
       <Container>
         <div className="blog-post">
           <div

@@ -7,17 +7,17 @@ const typography = new Typography({
   scaleRatio: 2,
   googleFonts: [
     {
-      name: 'Poppins',
-      styles: ['400', '600', '700'],
+      name: "Poppins",
+      styles: ["400", "600", "700"],
     },
   ],
-  headerFontFamily: ['Poppins'],
+  headerFontFamily: ["Poppins"],
   headerWeight: 700,
-  bodyFontFamily: ['Poppins'],
+  bodyFontFamily: ["Poppins"],
   bodyGray: 22,
   bodyWeight: 400,
   boldWeight: 600,
-  includeNormalize: false
+  includeNormalize: false,
 })
 
 export default typography
