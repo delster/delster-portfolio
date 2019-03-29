@@ -1,17 +1,20 @@
 import React from "react"
 import { graphql } from "gatsby"
+import styled from "styled-components"
 
 import Layout from "../components/layout"
-import Container from "../components/grid/container"
+import Container from "../components/container"
 import SEO from "../utils/seo"
-import PostSnippet from "../components/posts/snippet"
+import PostSnippet from "../components/post-snippet"
+
+const Blogroll = styled.div``
 
 export default ({ data }) => {
   return (
     <Layout title="Recent Blog Posts">
       <SEO title="Blog" keywords={[`delster`, `developer`, `portfolio`]} />
       <Container>
-        <div className="blog-roll">
+        <Blogroll>
           {data.allMarkdownRemark.edges.map(({ node }) => (
             <PostSnippet
               key={node.id}
@@ -21,7 +24,7 @@ export default ({ data }) => {
               excerpt={node.excerpt}
             />
           ))}
-        </div>
+        </Blogroll>
       </Container>
     </Layout>
   )
@@ -29,16 +32,16 @@ export default ({ data }) => {
 
 export const query = graphql`
   query {
-    allMarkdownRemark( sort: { fields: [frontmatter___date], order: DESC }) {
+    allMarkdownRemark( sort: { fields: [frontmatter___date], order: DESC } ) {
       edges {
         node {
           id
+          excerpt
           frontmatter {
             path
             title
             date(formatString: "MMMM DD, YYYY")
           }
-          excerpt
         }
       }
     }

@@ -1,7 +1,7 @@
 import React from "react"
 
 import Layout from "../components/layout"
-import Container from "../components/grid/container"
+import Container from "../components/container"
 import SEO from "../utils/seo"
 
 const ProjectsPage = () => (

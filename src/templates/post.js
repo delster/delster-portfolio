@@ -1,13 +1,26 @@
 import React from "react"
 import { graphql } from "gatsby"
+import styled from "styled-components"
 
 import Layout from "../components/layout"
-import Container from "../components/grid/container"
+import Container from "../components/container"
 import SEO from "../utils/seo"
 
-import "./post.sass"
+const BlogPost = styled.div`
+  margin-top: -4.5rem;
+`
+const BlogPostContent = styled.div`
+  background-color: #fff;
+  margin-bottom: 2rem;
+  padding: 2rem;
+  border-radius: 2rem;
+  box-shadow: 0 4px 16px 0 rgba(0,0,0,.04);
+  .wide {
+    margin-left: -2rem;
+    margin-right: -2rem;
+  }
+`
 
-// this prop will be injected by the GraphQL query below.
 export default function Template({ data }) {
   const { markdownRemark } = data
   const { frontmatter, html } = markdownRemark
@@ -19,12 +32,9 @@ export default function Template({ data }) {
         keywords={[`delster`, `developer`, `portfolio`]}
       />
       <Container>
-        <div className="blog-post">
-          <div
-            className="blog-post-content"
-            dangerouslySetInnerHTML={{ __html: html }}
-          />
-        </div>
+        <BlogPost>
+          <BlogPostContent dangerouslySetInnerHTML={{ __html: html }} />
+        </BlogPost>
       </Container>
     </Layout>
   )

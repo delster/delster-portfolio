@@ -1,18 +1,27 @@
 import React from "react"
-import Container from "./grid/container"
+import styled from "styled-components"
+import Container from "./container"
 
-import "./hero.sass"
+const StyledHero = styled.section`
+  & > div {
+    padding: 1rem 0 0
+  }
+`
+const HeroTitle = styled.h1`
+  margin: 0
+`
+const HeroSubtitle = styled.p``
 
 const Hero = props => {
   return (
-    <section className="section hero">
+    <StyledHero>
       {(props.title || props.subtitle) && (
         <Container>
-          {props.title && <h1>{props.title}</h1>}
-          {props.subtitle && <p>{props.subtitle}</p>}
+          {props.title && <HeroTitle>{props.title}</HeroTitle>}
+          {props.subtitle && <HeroSubtitle>{props.subtitle}</HeroSubtitle>}
         </Container>
       )}
-    </section>
+    </StyledHero>
   )
 }
 

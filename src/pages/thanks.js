@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../utils/seo"
-import Container from "../components/grid/container"
+import Container from "../components/container"
 
 const ThanksPage = () => (
   <Layout title="Thanks for Reaching Out!">

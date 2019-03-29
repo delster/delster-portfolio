@@ -28,8 +28,6 @@ module.exports = {
     // Sharp Library for Images
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    // Sass Compilation
-    `gatsby-plugin-sass`,
     // Typography.js
     {
       resolve: `gatsby-plugin-typography`,

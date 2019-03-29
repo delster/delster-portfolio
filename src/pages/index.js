@@ -1,9 +1,18 @@
 import React from "react"
 import { Link } from "gatsby"
+import styled from "styled-components"
 import Layout from "../components/layout"
 import SEO from "../utils/seo"
-import Container from "../components/grid/container"
+import Container from "../components/container"
 import CTADivider from "../components/ctadivider"
+
+const SkillsSubheading = styled.h4`
+  color: rgba(0,0,0,.37);
+  font-size: .85rem;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  margin-bottom: 0;
+`
 
 const IndexPage = () => (
   <Layout
@@ -18,24 +27,24 @@ const IndexPage = () => (
     <section id="about">
       <Container>
         <h3>Skills & Tools</h3>
-        <h4 className="sm-heading">HTML Templating</h4>
+        <SkillsSubheading>HTML Templating</SkillsSubheading>
         <p>
           HTML5, Pug (Jade), Haml, JSX, MDX. I think the future is something
           like MDX with some shorthand id/class/attribute tagging. Ask me about
           it.
         </p>
-        <h4 className="sm-heading">CSS Preprocessors and Styling Methods</h4>
+        <SkillsSubheading>CSS Preprocessors and Styling Methods</SkillsSubheading>
         <p>CSS3, Sass, CSS Modules, styled-components</p>
-        <h4 className="sm-heading">JavaScript</h4>
+        <SkillsSubheading>JavaScript</SkillsSubheading>
         <p>JavaScript (ES6), jQuery, React</p>
-        <h4 className="sm-heading">Front-end Design Frameworks</h4>
+        <SkillsSubheading>Front-end Design Frameworks</SkillsSubheading>
         <p>Bootstrap, Foundation, MaterializeCSS, others (ask me!)</p>
-        <h4 className="sm-heading">Modern Front-end Tooling</h4>
+        <SkillsSubheading>Modern Front-end Tooling</SkillsSubheading>
         <p>
           Gulp, Grunt, Webpack, npm, Yarn, Terminal, CLI, Git, GitHub, Babel,
           ESLint, Prettier, Heroku, Netlify
         </p>
-        <h4 className="sm-heading">...and more to come</h4>
+        <SkillsSubheading>...and more to come</SkillsSubheading>
         <p>
           I'm currently learning Serverless and Cloud Native architecture and
           related tools; GatsbyJS, GraphQL, Apollo, AWS Lambda, and more. Follow{" "}
