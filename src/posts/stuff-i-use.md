@@ -20,15 +20,11 @@ Obviously, I use a lot of [JSX](https://reactjs.org/docs/introducing-jsx.html). 
 
 ## CSS
 
-### Sass
-
-### Sass Modules
-
-### CSS-in-JSS
-
-### styled-components
+These days, I've been using a lot of `styled-components`, simply because it's popular. I think `Sass` + `CSS Modules` is a good compromise of component-scoped styling while still retaining (enhanced) CSS-like syntax, separation of concerns, autoprefixing and browser compatibility, etc. Everything you get from CSS-in-JS, just in another file specifically catered to styling. 🤷‍♂️
 
 ## JavaScript
+
+You may have noticed front-end JavaScript is my wheelhouse. The rest of this page is going to cover how I solve various problems with JavaScript.
 
 ### Apollo
 

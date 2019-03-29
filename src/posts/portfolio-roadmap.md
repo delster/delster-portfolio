@@ -17,7 +17,7 @@ TODO: Organize these by priority, timeline, or whatever's logical.
 * Primary Nav
 * Animations
 * Consistent design (design language/framework?)
-* Refactor Sass files to `styled-components`
+* ~~Refactor Sass files to `styled-components`~~
 
 ## Content
 
@@ -28,6 +28,7 @@ TODO: Organize these by priority, timeline, or whatever's logical.
   * Contact Section
 * About Page
 * Projects Page
+* ~~Blog Page~~
 * Contact Page
 * Testimonials/Case Studies (roll into Projects?)
 * Images (Logo/favicon, Home Hero, Iconography, etc)
