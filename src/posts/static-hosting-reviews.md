@@ -19,7 +19,7 @@ So you've built the perfect static site, and it's time to launch. Where will you
 
 ## 1. GitHub Pages
 
-An obvious choice, the site source is available on [GitHub](https://github.com/delster/delster-portfolio) already. This will be the compiled version of the repo, served from GitHub Pagges.
+An obvious choice, the site source is available on [GitHub](https://github.com/delster/delster-portfolio) already. This will be the compiled version of the repo, served from GitHub Pages.
 
 ## 2. Netlify
 
